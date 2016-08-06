@@ -1,0 +1,23 @@
+class Ayush
+{
+public static void add ()
+{
+System.out.println("Ayush Add Method");
+}
+
+public static void sub ()
+{
+System.out.println("Ayush sub Method");
+}
+public static void adiv()
+{
+System.out.println("Ayush div Method");
+}
+public static void main(String []args)
+{
+Ayush.add();
+
+Ayush.sub();
+Ayush.adiv();
+}
+}
