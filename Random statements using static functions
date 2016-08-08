@@ -1,0 +1,27 @@
+//Random Statements//
+import java.util.Scanner;
+class Tues2
+{
+static int e;
+public static void check(int a , int b, int c)
+
+{
+
+if(a<0||a>100 || b<0 || b>100 || c<0 || c>100)
+e=-1;
+else e=(a+b+c);
+}
+public static void main(String []args)
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter three marks");
+int a = sc.nextInt();
+int b = sc.nextInt();
+int c = sc.nextInt();
+check(a,b,c);
+if(e==-1)
+System.out.println("invalid ");
+else
+System.out.println("total is  "+e);
+}
+}
