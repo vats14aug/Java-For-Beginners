@@ -1,0 +1,24 @@
+//no return type with parameters//
+import java.io.*;
+class Tues
+{
+String name2;
+public void setName(String str)
+{
+name2=str;
+}
+public String getName()
+{
+return name2;
+}
+
+public static void main(String []args) throws IOException
+{
+BufferedReader br=new BufferedReader(new InputStreamReader (System.in));
+System.out.println("enter the string");
+String str=br.readLine();
+Tues t=new Tues();
+t.setName(str);
+System.out.println("NAME IS "+t.getName());
+}
+} 
