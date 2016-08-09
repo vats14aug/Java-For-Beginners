@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class ASCI1
+{
+public static String check(char ch)
+{
+if (ch>='a' && ch<='z')
+return "LOWERCASE" ;
+
+else if (ch>='A' && ch<='Z')
+return "UPPERCASE" ;
+
+else
+return "SPECIAL CHAR";
+}
+
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the character");
+char ch=sc.next().charAt(0);
+System.out.println(check(ch));
+}
+}
