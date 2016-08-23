@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class Armstrong
+{
+
+	public static void main(String []args)
+		{	int rem=0;
+			double store=0;
+			Scanner sc= new Scanner(System.in);
+			System.out.println("Enter any number");
+			int a=sc.nextInt();
+				while(a!=0)
+				   {
+					
+					rem=a%10;
+					store=store+Math.pow(rem,3);
+					a/=10;
+				   }
+			if(store==a)
+			System.out.println("Num,ber is Armstrong");
+
+				
+			
+			
+				
+		}	
+	
+	
+
+}
