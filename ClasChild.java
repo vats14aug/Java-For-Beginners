@@ -6,7 +6,8 @@ public class ClasChild extends Clssamp {
 		
 	
 	//Clssamp obj1=new Clssamp();
-	Clssamp obj1=new Clssamp(45);
+	//Clssamp obj1=new Clssamp(45);
+	 Clssamp obj1=new Clssamp(45,98);
 	 
  System.out.println( (obj1.getSum()));
 }
