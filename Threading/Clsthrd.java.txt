@@ -1,0 +1,27 @@
+package com.threading;
+
+public class Clsthrd extends Thread {
+
+	
+	public void run()
+	{
+		super.run();
+		try {
+			
+			System.out.println("CHILD THREAD"+Thread.currentThread().getName());
+			for(;;)
+			{
+				System.out.println(" I am in child thread ");
+				Thread.sleep(100);
+			}
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		finally{
+			System.out.println("Thread 1 got killed ");
+		}
+	}
+	
+}
