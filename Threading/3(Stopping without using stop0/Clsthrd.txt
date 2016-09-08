@@ -1,0 +1,44 @@
+package com.threading;
+
+public class Clsthrd extends Thread {
+
+	public boolean lbncanstop=false;
+	public void run()
+	{
+		super.run();
+		try {
+			
+			System.out.println("CHILD THREAD"+Thread.currentThread().getName());
+			for(;;)
+			{
+				System.out.println(" I am in child thread ");
+				Thread.sleep(100);
+				System.out.println(" Still processing ");
+				System.out.println();
+				System.out.println();
+				System.out.println();
+				System.out.println();
+				System.out.println("printd line");
+				if(lbncanstop)
+				{
+					System.out.println("Main thread killed this thread1 safely");
+				
+					break;
+				}
+			}
+				System.out.println("Out of LOop");
+				
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		finally{
+			
+			
+			System.out.println("Thread 1 got killed ");
+		}
+	}
+	
+}
