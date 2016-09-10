@@ -1,0 +1,56 @@
+package com.threading;
+
+public class Clsthrd extends Thread {
+
+	public int i=0,b=0;
+	public void run()
+	{
+		super.run();
+		try {
+			
+			System.out.println("CHILD THREAD"+Thread.currentThread().getName());
+			for(;;)
+			{
+				try{
+				int a=90;
+				b=a/i;
+				}
+				catch(ArithmeticException ae)
+				{
+					
+					System.err.println(ae.getMessage());
+				}
+				System.out.println("The value of B is"+b);
+				System.out.println(" I am in child thread ");
+				Thread.sleep(100);
+				System.out.println(" Still processing ");
+				System.out.println();
+				System.out.println();
+				System.out.println();
+				System.out.println();
+				System.out.println("printd line");
+				i++;
+				if(i>20)
+				{
+					System.out.println("Main thread killed this thread1 safely");
+				
+					break;
+				}
+			}   System.out.println("The value of I is"+i);
+				System.out.println("Out of LOop");
+				
+			
+			
+		} catch (Exception e) {
+			System.err.println("The exception occurs :  "+e.getMessage());
+			// TODO: handle exception
+		}
+		
+		finally{
+			
+			
+			System.out.println("Thread 1 got killed ");
+		}
+	}
+	
+}
