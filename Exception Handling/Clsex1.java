@@ -13,7 +13,7 @@ public class Clsex1 {
 		try {
 			int i=10;
 			 z=i/2;
-			//################
+			//#################
 			
 			int[] a=new int[2];
 			a[0]=1;
