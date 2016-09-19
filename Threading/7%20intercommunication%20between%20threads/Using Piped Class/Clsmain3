@@ -1,0 +1,31 @@
+import java.io.PipedReader;
+import java.io.PipedWriter;
+
+//Communication using pipes
+public class Clsmain3 {
+
+	public static void main(String[] args) {
+		
+		
+		try {
+			PipedReader lObjPR=new PipedReader();
+			PipedWriter lObjPW=new PipedWriter();
+			lObjPW.connect(lObjPR);
+			
+			/////////////////////
+			Thread t1=new ClsInterp1(lObjPW);
+			Thread t2=new ClsInterp2(lObjPR);
+					t1.start();
+					t2.start();
+			
+			
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	
+	
+	
+}
