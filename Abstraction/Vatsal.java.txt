@@ -12,7 +12,7 @@ class Vijay extends Vendor
 {
 	public void calc(int a)
 	{
-		System.out.println("Square is:"+(a*a));
+		System.out.print("Square is:"+(a*a));
 	}
 }
 public class Vatsal extends Vendor
