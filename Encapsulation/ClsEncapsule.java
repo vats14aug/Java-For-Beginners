@@ -1,5 +1,5 @@
 package com.inheritance;
-//EncapsulTION eXAMPLE
+//EncapsulTION EXAMPLE
 
 class ClasSalary 
 {
