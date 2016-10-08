@@ -2,7 +2,7 @@
 
 package com.inheritance;
 
-public class Clsex1 {
+public class Clsex1  {
 	public static void main(String []args)
 	{
 		met1();
